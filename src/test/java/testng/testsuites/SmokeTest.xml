@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SauceDemo - Smoke">
+    <listeners>
+        <listener class-name="testng.listeners.TestStatusListener"></listener>
+    </listeners>
+    <test name="Smoke Test">
+        <classes>
+            <class name="testng.testcases.AddToCartCheckoutTest"></class>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->

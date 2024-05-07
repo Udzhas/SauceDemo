@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SauceDemo - Regression">
+    <listeners>
+        <listener class-name="testng.listeners.TestStatusListener"></listener>
+    </listeners>
+    <test name="Regression" parallel="classes" thread-count="10">
+        <classes>
+            <class name="testng.testcases.AddToCartCheckoutTest"></class>
+            <class name="testng.testcases.AddToCartCountTest"></class>
+            <class name="testng.testcases.LockedOutUserTest"></class>
+            <class name="testng.testcases.LogoutTest"></class>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
